@@ -371,13 +371,14 @@ th {
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f2f2f2; }
 
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -402,6 +403,25 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.header {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 56px;
+  height: 279px; }
+
+.header__logo {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 102px;
+  height: 83px;
+  margin-left: -51px; }
+
+.feature {
+  padding: 20px 20px 0 50px;
+  text-align: left; }
+
 .feature__title {
   font-size: 21px;
   line-height: 26px;
@@ -412,20 +432,60 @@ a {
   line-height: 21px;
   color: #333333; }
 
+.features {
+  padding: 20px; }
+
+.footer {
+  width: 320px;
+  height: 240px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center; }
+
 .footer__hashtag {
+  color: #000000;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold; }
 
+.footer__socials {
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.footer__copyright {
+  margin-top: 40px;
+  padding: 10px 45px 10px 0; }
+
+.interes {
+  padding: 30px 20px 50px 20px;
+  text-align: center; }
+
 .interes__title {
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold; }
 
 .interes__text {
+  margin: 0;
+  padding-top: 25px;
   font-size: 14px;
   line-height: 24px;
   color: #333333; }
+
+.interes__btn {
+  margin-top: 35px; }
+
+.intro {
+  height: 389px;
+  background: url("/img/intro-triangle-mobile.svg") 50% bottom no-repeat, url("/img/back-desktop.jpg") 50% no-repeat; }
+
+.main {
+  width: 320px;
+  margin: 0 auto; }
+
+.map {
+  height: 350px;
+  background: url("/img/map.jpg") center; }
 
 .site-list__link {
   font-size: 14px;
@@ -433,29 +493,102 @@ a {
   color: #000000;
   font-weight: bold; }
 
+.promo {
+  padding: 35px 30px;
+  text-align: center; }
+
 .promo__title {
-  font-size: 21px;
+  margin: 0;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold; }
 
 .promo__text {
+  margin: 0;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 26px;
   color: #333333; }
 
+.reasons {
+  min-height: 1830px;
+  text-align: center; }
+
+.reasons__wrapper {
+  display: flex;
+  flex-direction: column; }
+  .reasons__wrapper--gray {
+    background-color: #eeeeee; }
+
+.reasons__item {
+  padding: 20px 5px;
+  margin: 0 20px;
+  border-bottom: 1px solid #d6d6d6; }
+  .reasons__item--blue {
+    padding-top: 40px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    border-bottom: none; }
+  .reasons__item--first {
+    padding-top: 60px; }
+  .reasons__item--last {
+    border-bottom: none; }
+
 .reasons__title {
+  display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold; }
 
 .reasons__number {
+  display: block;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 21px; }
 
 .reasons__text {
+  margin: 0;
+  margin-top: 20px;
   font-size: 14px;
   line-height: 21px;
-  color: #333333; }
+  color: inherit; }
+
+.reasons__bg {
+  height: 260px;
+  order: 1; }
+  .reasons__bg--city {
+    background: url("/img/photo-city@1x.jpg");
+    background-position: center;
+    background-size: auto 100%; }
+  .reasons__bg--bridge {
+    background: url("/img/photo-bridge@1x.jpg");
+    background-position: center;
+    background-size: auto 100%; }
+
+.search {
+  height: 287px; }
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 150px; }
+
+.socials__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #81b3d2; }
+
+.btn {
+  padding: 16px 47px;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #81b3d2; }
 
 .review__legend {
   font-size: 21px;
@@ -487,3 +620,25 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #ffffff; }
+
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.site-list__item {
+  text-align: center; }
+
+.site-list__link {
+  display: block;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db; }
+  .site-list__link--last {
+    border-bottom: none; }
+  .site-list__link--first {
+    border-top: none; }

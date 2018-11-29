@@ -1,11 +1,22 @@
+.interes {
+  padding: 30px 20px 50px 20px;
+  text-align: center;
+}
+
 .interes__title {
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .interes__text {
+  margin: 0;
+  padding-top: 25px;
+
   font-size: 14px;
   line-height: 24px;
   color: #333333;
+}
+.interes__btn {
+  margin-top: 35px;
 }

@@ -1,11 +1,29 @@
 .promo {
-  padding: 35px 30px;
+  position: relative;
+  padding: 25px 25px;
+  padding-bottom: 7px;
 
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: -37px;
+    left: 0;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url("/img/bg-triangle.svg");
+    background-size: 100% 37px;
+    background-repeat: no-repeat;
+  }
 }
 
 .promo__title {
   margin: 0;
+  margin-top: 15px;
 
   font-size: 18px;
   line-height: 26px;
@@ -14,9 +32,23 @@
 
 .promo__text {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 29px;
 
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 48px 100px;
+  }
+
+  .promo__title {
+    font-size: 21px;
+  }
+
+  .promo__text {
+    padding-top: 10px;
+  }
 }

@@ -1,6 +1,27 @@
-.site-list__link {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-  font-weight: bold;
+.nav {
+  position: relative;
+  min-height: 56px;
 }
+
+.nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 23px;
+  height: 22px;
+
+  background: url("/img/icons/icon-cross.svg");
+
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__toggle {
+    display: none;
+  }
+}
+

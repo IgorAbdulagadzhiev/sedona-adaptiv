@@ -1,6 +1,4 @@
 .footer {
-  width: 320px;
-  height: 240px;
   margin: 0 auto;
   padding: 20px 0;
 
@@ -8,6 +6,10 @@
 }
 
 .footer__hashtag {
+  display: inline-block;
+
+  margin-top: 15px;
+
   color: #000000;
   font-size: 21px;
   line-height: 26px;
@@ -16,10 +18,31 @@
 
 .footer__socials {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .footer__copyright {
-  margin-top: 40px;
+  display: inline-block;
+
+  margin-top: 32px;
   padding: 10px 45px 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 10px;
+  }
+
+  .footer__socials {
+    margin: 0;
+  }
+
+  .footer__copyright {
+    margin: 0;
+    padding: 0;
+  }
 }

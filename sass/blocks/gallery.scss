@@ -1,18 +1,32 @@
+.gallery__photo {
+  min-height: 416px;
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+
 .gallery__name {
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: #000000;
   font-weight: bold;
 }
 
 .gallery__author {
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .gallery__like {
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

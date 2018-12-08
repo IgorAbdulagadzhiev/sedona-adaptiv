@@ -1,4 +1,11 @@
 .features {
-  padding: 20px;
+  padding: 5px 20px 40px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    flex-direction: row;
+  }
 }
 

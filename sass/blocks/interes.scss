@@ -1,5 +1,5 @@
 .interes {
-  padding: 30px 20px 50px 20px;
+  padding: 25px 20px 50px 20px;
   text-align: center;
 }
 
@@ -11,12 +11,33 @@
 
 .interes__text {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 18px;
 
   font-size: 14px;
   line-height: 24px;
   color: #333333;
 }
+
+.interes__text br {
+  display: none;
+}
+
 .interes__btn {
+  padding: 16px 47px;
+
   margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .interes {
+    padding: 58px 154px;
+  }
+
+  .interes__title {
+    font-size: 30px;
+  }
+
+  .interes__text br {
+    display: inline-block;
+  }
 }

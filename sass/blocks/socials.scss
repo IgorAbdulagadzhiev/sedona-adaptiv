@@ -5,8 +5,15 @@
 }
 
 .socials__link {
-  display: block;
-  width: 45px;
-  height: 45px;
+  display: flex;
+  justify-content: center;
+
+  width: 46px;
+  height: 48px;
+
   background-color: $main-color;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
 }

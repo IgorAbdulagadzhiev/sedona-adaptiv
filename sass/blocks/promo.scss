@@ -41,14 +41,19 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 48px 100px;
+    padding: 50px 100px;
+
+    &::after {
+      content: none;
+    }
   }
 
   .promo__title {
+    margin-top: 0;
     font-size: 21px;
   }
 
   .promo__text {
-    padding-top: 10px;
+    margin-top: 30px;
   }
 }

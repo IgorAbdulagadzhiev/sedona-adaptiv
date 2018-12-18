@@ -52,16 +52,19 @@
   }
 
   .site-list__item {
+    width: 20%;
+
     &--before-logo {
       margin-right: 20%;
     }
   }
 
   .site-list__link {
-
     color: #000000;
     background: none;
     border: none;
+    font-size: 14px;
+    line-height: 26px;
 
     &:hover {
       background: none;

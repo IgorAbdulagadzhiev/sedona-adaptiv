@@ -5,8 +5,7 @@
 }
 
 .feature__title {
-  display: inline-block;
-  padding-top: 15px;
+  margin-top: 15px;
 
   font-size: 18px;
   line-height: 26px;
@@ -20,4 +19,36 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .feature {
+    width: 400px;
+
+    padding: 152px 45px 40px;
+
+    text-align: center;
+
+    &--house {
+      order: 1;
+    }
+
+    &--food {
+      order: 2;
+      padding: 152px 55px 40px;
+    }
+
+    &--souvenirs {
+      order: 3;
+    }
+  }
+
+  .feature__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .feature__text {
+    margin-top: 20px;
+  }
 }

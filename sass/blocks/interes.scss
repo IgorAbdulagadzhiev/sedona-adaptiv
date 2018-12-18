@@ -23,21 +23,31 @@
 }
 
 .interes__btn {
-  padding: 16px 47px;
-
+  padding: 16px 0;
   margin-top: 35px;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
   .interes {
-    padding: 58px 154px;
+    padding: 55px 154px 59px 154px;
   }
 
   .interes__title {
     font-size: 30px;
   }
 
+  .interes__text {
+    padding-top: 25px;
+  }
+
   .interes__text br {
     display: inline-block;
+  }
+
+  .interes__btn {
+    margin-top: 41px;
+    padding: 16px 0;
+    width: 458px;
   }
 }

@@ -46,6 +46,10 @@
   font-weight: bold;
 }
 
+.reasons__title br {
+  display: none;
+}
+
 .reasons__number {
   display: block;
   margin-top: 10px;
@@ -64,8 +68,8 @@
 }
 
 .reasons__bg {
-  height: 260px;
   order: 1;
+  min-height: 260px;
 
   &--city {
     background: url("/img/photo-city@1x.jpg");
@@ -90,13 +94,25 @@
   .reasons__item {
     width: 256px;
 
-    padding: 44px 28px 50px 30px;
+    padding: 44px 29px 44px 29px;
 
     border-bottom: none;
+
+    &--blue {
+      padding: 44px 45px 30px 45px;
+    }
+  }
+
+  .reasons__title {
+    font-size: 21px;
+  }
+
+  .reasons__title br {
+    display: block;
   }
 
   .reasons__text {
-    margin-top: 20px;
+    margin-top: 21px;
   }
 
   .reasons__bg {

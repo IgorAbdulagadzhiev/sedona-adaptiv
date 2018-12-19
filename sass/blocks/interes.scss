@@ -51,3 +51,13 @@
     width: 458px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .interes {
+    padding: 55px 154px 66px 154px;
+  }
+
+  .interes__btn {
+    margin-top: 47px;
+  }
+}

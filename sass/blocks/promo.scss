@@ -57,3 +57,13 @@
     margin-top: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 50px 350px;
+  }
+
+  .promo__text {
+    margin-top: 28px;
+  }
+}

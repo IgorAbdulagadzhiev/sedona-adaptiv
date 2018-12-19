@@ -2,6 +2,22 @@
   padding: 15px 0 0 50px;
 
   text-align: left;
+
+  background-repeat: no-repeat;
+  background-size: 39px 37px;
+
+  &--house {
+    background-image: url("/img/icons/icon-home.svg");
+    background-position: 0 20px;
+  }
+
+  &--food {
+    background-image: url("/img/icons/icon-burger.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("/img/icons/icon-gift.svg");
+  }
 }
 
 .feature__title {

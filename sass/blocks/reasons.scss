@@ -124,3 +124,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reasons__item {
+    width: 400px;
+
+    padding: 42px 29px 65px 29px;
+
+    &--blue {
+      padding: 49px 68px;
+    }
+
+  }
+
+  .reasons__title {
+    width: 160px;
+    margin: 3px auto 0 auto;
+  }
+
+  .reasons__bg {
+    width: 800px;
+
+    background-size: cover;
+  }
+}

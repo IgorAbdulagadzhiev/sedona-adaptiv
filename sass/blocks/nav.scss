@@ -1,6 +1,13 @@
 .nav {
   position: relative;
-  min-height: 56px;
+}
+
+.nav__wrapper {
+  display: none;
+}
+
+.nav--opened .nav__wrapper {
+  display: block;
 }
 
 .nav__toggle {
@@ -13,15 +20,21 @@
   width: 23px;
   height: 22px;
 
-  background: url("/img/icons/icon-cross.svg");
+  background: url("/img/icons/icon-menu.svg");
 
   border: none;
   cursor: pointer;
 }
 
+.nav--opened .nav__toggle {
+  background: url("/img/icons/icon-cross.svg");
+}
+
 @media (min-width: $tablet-width) {
+  .nav__wrapper {
+    display: block;
+  }
   .nav__toggle {
     display: none;
   }
 }
-

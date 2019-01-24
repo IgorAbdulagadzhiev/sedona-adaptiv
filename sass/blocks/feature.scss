@@ -1,5 +1,5 @@
 .feature {
-  padding: 15px 0 0 50px;
+  padding: 29px 0 0 60px;
 
   text-align: left;
 
@@ -8,15 +8,17 @@
 
   &--house {
     background-image: url("/img/icons/icon-home.svg");
-    background-position: 0 20px;
+    background-position: 11px 20px;
   }
 
   &--food {
     background-image: url("/img/icons/icon-burger.svg");
+    background-position: 9px 23px;
   }
 
   &--souvenirs {
     background-image: url("/img/icons/icon-gift.svg");
+    background-position: 12px 18px;
   }
 }
 
@@ -45,17 +47,24 @@
 
     text-align: center;
 
+    background-size: 75px 72px;
+
+
     &--house {
       order: 1;
+      background-position: 90px 54px;
     }
 
     &--food {
       order: 2;
       padding: 152px 55px 40px;
+      background-position: 94px 55px;
     }
 
     &--souvenirs {
       order: 3;
+      background-size: 64px 75px;
+      background-position: 92px 51px;
     }
   }
 
@@ -66,5 +75,21 @@
 
   .feature__text {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature {
+    &--house {
+      background-position: 160px 54px;
+    }
+
+    &--food {
+      background-position: 162px 55px;
+    }
+
+    &--souvenirs {
+      background-position: 168px 51px;
+    }
   }
 }

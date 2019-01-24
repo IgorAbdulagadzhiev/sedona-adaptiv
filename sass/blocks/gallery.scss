@@ -1,10 +1,26 @@
 .gallery__photo {
   min-height: 416px;
   padding: 20px;
-  border-top: 1px solid gray;
+  border-top: 1px solid #e5e5e5;
+}
+
+.gallery__photo {
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.gallery__photo-wrapper {
+  width: 280px;
+  height: 280px;
+}
+
+.gallery__wrapper {
+  padding-top: 20px;
 }
 
 .gallery__name {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -12,17 +28,26 @@
 }
 
 .gallery__author {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  text-transform: none;
 }
 
 .gallery__like {
+  display: block;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
+  font-weight: bold;
 }
 
+.gallery__like img {
+  margin-right: 10px;
+  width: 22px;
+  height: 21px;
+}
 @media (min-width: $tablet-width) {
   .gallery {
     display: flex;

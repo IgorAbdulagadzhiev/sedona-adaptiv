@@ -15,24 +15,28 @@
     <header class="header">
       <div class="header__logo">
         <picture>
-
+          <source media="(min-width: 1200px)" srcset="/img/icons/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/icons/logo-sedona-tablet.svg">
+          <img src="/img/icons/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
       <nav class="nav">
         <a href="#" class="nav__toggle"></a>
-        <ul class="site-list">
-          <li class="site-list__item"><a href="#" class="site-list__link">Главная</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">Фото и видео</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="#" class="site-list__link">html academy</a></li>
-        </ul>
+        <div class="nav__wrapper">
+          <ul class="site-list">
+            <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--first">Главная</a></li>
+            <li class="site-list__item site-list__item--before-logo"><a href="photo.html" class="site-list__link">Фото
+                и видео</a></li>
+            <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
+            <li class="site-list__item"><a href="#" class="site-list__link site-list__link--last">html academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="intro">
-        <div class="intro__wrapper">
-
-        </div>
+      <section class="intro intro--mini">
+        <img src="/img/icons/text-sedona.svg" class="intro__img intro__img--mini" alt="sedona title">
+      </section>
       </section>
       <section class="promo">
         <h1 class="promo__title">Оставьте свой отзыв</h1>
@@ -92,13 +96,13 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="footer__hashtag">#visitsedona</div>
+      <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link"><span class="visually-hidden">твиттер</span> </a>
-        <a class="socials__link"><span class="visually-hidden">фейсбук</span> </a>
-        <a class="socials__link"><span class="visually-hidden">ютуб</span> </a>
+        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg" alt=""> </a>
+        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg" alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg" alt=""></a>
       </div>
-      <div class="footer__copyright">разработано</div>
+      <a href="#" class="footer__copyright">разработано</a>
     </footer>
   </div>
 </body>

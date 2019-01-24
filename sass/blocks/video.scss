@@ -1,3 +1,10 @@
 .video {
   height: 267px;
 }
+.video__item {
+  background-image: url('../../img/video-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  vertical-align: top;
+}

@@ -40,12 +40,16 @@
       <section class="promo promo--photo">
         <h1 class="promo__title">Фото и видео</h1>
         <p class="promo__text">Не можете решиться на путешествие из-за курса?
-          Фотографии помогут вам забыть о политике и экономике.</p>
+            Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="gallery">
-        <div class="gallery__photo">
+        <div class="gallery__photo gallery__photo--first">
           <div class="gallery__photo-wrapper">
-          <img src="img/photo-1-mobile@1x.jpg" alt="" class="gallery__photo-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg">
+              <img src="img/photo-1-mobile@1x.jpg" alt="">
+            </picture>
           </div>
           <div class="gallery__wrapper">
             <span class="gallery__name">неродные просторы</span>
@@ -55,17 +59,11 @@
         </div>
         <div class="gallery__photo">
           <div class="gallery__photo-wrapper">
-          <img src="img/photo-2-mobile@1x.jpg" alt="" class="gallery__photo-image">
-          </div>
-          <div class="gallery__wrapper">
-            <p class="gallery__name">неродные просторы</p>
-            <p class="gallery__author">Автор фото: Борис</p>
-            <p class="gallery__like">150</p>
-          </div>
-        </div>
-        <div class="gallery__photo">
-          <div class="gallery__photo-wrapper">
-          <img src="img/photo-3-mobile@1x.jpg" alt="" class="gallery__photo-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg">
+              <img src="img/photo-2-mobile@1x.jpg" alt="">
+            </picture>
           </div>
           <div class="gallery__wrapper">
             <span class="gallery__name">неродные просторы</span>
@@ -75,7 +73,25 @@
         </div>
         <div class="gallery__photo">
           <div class="gallery__photo-wrapper">
-            <img src="img/photo-4-mobile@1x.jpg" alt="" class="gallery__photo-image">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+                <img src="img/photo-3-mobile@1x.jpg" alt="">
+            </picture>
+          </div>
+          <div class="gallery__wrapper">
+            <span class="gallery__name">неродные просторы</span>
+            <span class="gallery__author">Автор фото: Борис</span>
+            <span class="gallery__like">150</span>
+          </div>
+        </div>
+        <div class="gallery__photo">
+          <div class="gallery__photo-wrapper">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg">
+                <img src="img/photo-4-mobile@1x.jpg" alt="">
+            </picture>
           </div>
           <div class="gallery__wrapper">
             <span class="gallery__name">неродные просторы</span>
@@ -87,20 +103,30 @@
         </div>
       </section>
       <section class="promo promo--photo">
-        <h1 class="promo__title">Фото и видео</h1>
-        <p class="promo__text">Не можете решиться на путешествие из-за курса?
-          Фотографии помогут вам забыть о политике и экономике.</p>
+        <h1 class="promo__title">Все еще сомневаетесь?</h1>
+        <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </section>
       <section class="video">
         <video class="video__item" width="320" height="201" preload="none" data-video="0">
 
         </video>
         <div class="video__controls">
-          <button class="video__replay"></button>
-          <div class="video__seekWrapper"></div>
-          <button class="video__subtitle"></button>
-          <button class="video__fullscreenbtn"></button>
-
+          <button class="video__replay video__btn">
+            <img src="/img/icons/icon-video-replay.svg" alt="">
+          </button>
+          <div class="video__seekWrapper">
+            <div class="video__seek">
+              <div class="video__scale">
+                <div class="video__bar"></div>
+              </div>
+            </div>
+          </div>
+          <button class="video__subtitle video__btn">
+            <img src="/img/icons/icon-video-subtitles.svg" alt="">
+          </button>
+          <button class="video__fullscreenbtn video__btn">
+            <img src="/img/icons/icon-video-fullscreen.svg" alt="">
+          </button>
         </div>
       </section>
     </main>

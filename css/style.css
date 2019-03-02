@@ -907,16 +907,6 @@ a {
   border: none;
   padding: 25px 20px 25px 20px;
   display: flex; }
-  .review__fieldset--name {
-    order: 1; }
-  .review__fieldset--impression {
-    order: 3; }
-  .review__fieldset--contact {
-    order: 2; }
-  .review__fieldset--places {
-    order: 4; }
-  .review__fieldset--emotions {
-    order: 5; }
   .review__fieldset::before {
     content: '';
     position: absolute;
@@ -952,16 +942,26 @@ a {
   flex-wrap: wrap; }
 
 .review__label {
-  margin-right: 13px;
   font-size: 14px;
   line-height: 26px; }
-  .review__label--lower {
-    text-transform: lowercase; }
+
+.review__fieldset--name .review__label {
+  margin-right: 13px; }
 
 .review__fieldset--contact .review__label {
   margin-left: 22px;
   position: relative;
   margin-bottom: 12px; }
+
+.review__box .review__label {
+  position: relative;
+  text-transform: none;
+  font-size: 18px;
+  padding-left: 80px;
+  font-weight: bold; }
+
+.review__box input {
+  display: none; }
 
 .review__input-text {
   width: 100%;

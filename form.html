@@ -45,35 +45,20 @@
       </section>
       <section class="review">
         <form class="review__form" action="get">
-          <fieldset class="review__fieldset review__fieldset--impression">
-
-            <legend class="review__legend">Ваше общее впечатление:</legend>
-            <ul class="review__list">
-              <li class="review__item">
-                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
-              </li>
-              <li class="review__item">
-                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
-              </li>
-              <li class="review__item">
-                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
-              </li>
-            </ul>
-          </fieldset>
           <fieldset class="review__fieldset review__fieldset--name">
 
             <legend class="review__legend">Представьтесь:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label for="" class="review__label review__label">Имя*:</label><input id="reviewName" class="review__input-text"
+                <label for="" class="review__label">Имя*:</label><input id="reviewName" class="review__input-text"
                   type="text" value="Петр">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label">Фамилия*:</label><input class="review__input-text"
+                <label for="" class="review__label">Фамилия*:</label><input class="review__input-text"
                   type="text" value="Иванов">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label">Отчество:</label><input class="review__input-text"
+                <label for="" class="review__label">Отчество:</label><input class="review__input-text"
                   type="text" value="Александрович">
               </li>
             </ul>
@@ -83,34 +68,51 @@
             <legend class="review__legend">Контактная информация:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label class="review__label review__label">Контактный телефон*:</label>
+                <label class="review__label">Контактный телефон*:</label>
                 <input class="review__input-text" type="text" value="Введите телефон">
               </li>
               <li class="review__item review__text">
-                <label class="review__label review__label">Электронная почта*:</label>
+                <label class="review__label">Электронная почта*:</label>
                 <input class="review__input-text" type="text" value="Введите e-mail">
               </li>
             </ul>
           </fieldset>
+          <fieldset class="review__fieldset review__fieldset--impression">
+
+            <legend class="review__legend">Ваше общее впечатление:</legend>
+            <ul class="review__list">
+              <li class="review__item review__box">
+                <input type="radio" name="impression" id="radioBtn1"><label for="radioBtn1" class="review__label">Скорее положительное</label>
+              </li>
+              <li class="review__item review__box">
+                <input type="radio" name="impression" id="radioBtn2"><label for="radioBtn2" class="review__label">Скорее отрицательное</label>
+              </li>
+              <li class="review__item review__box">
+                <input type="radio" name="impression" id="radioBtn3"><label for="radioBtn3" class="review__label">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+
+
           <fieldset class="review__fieldset review__fieldset--places">
 
             <legend class="review__legend">Посещенные достопримечательности:</legend>
             <ul class="review__list">
-              <li class="review__item">
-                <input type="checkbox" checked>
-                <label for="" class="review__label">Мост Дьявола</label>
+              <li class="review__item review__box">
+                <input type="checkbox" id="checkBtn1" checked>
+                <label for="checkBtn1" class="review__label">Мост Дьявола</label>
               </li>
-              <li class="review__item">
-                <input type="checkbox" checked>
-                <label for="" class="review__label">Гора-Колокол</label>
+              <li class="review__item review__box">
+                <input type="checkbox" id="checkBtn2" checked>
+                <label for="checkBtn2" class="review__label">Гора-Колокол</label>
               </li>
-              <li class="review__item">
-                <input type="checkbox" checked>
-                <label for="" class="review__label">Слайд-парк</label>
+              <li class="review__item review__box">
+                <input type="checkbox" id="checkBtn3" checked>
+                <label for="checkBtn3" class="review__label">Слайд-парк</label>
               </li>
-              <li class="review__item">
-                <input type="checkbox">
-                <label for="" class="review__1label">Красные скалы</label>
+              <li class="review__item review__box">
+                <input type="checkbox" id="checkBtn4">
+                <label for="checkBtn4" class="review__label">Красные скалы</label>
               </li>
             </ul>
           </fieldset>

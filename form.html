@@ -38,7 +38,7 @@
         <img src="/img/icons/text-sedona.svg" class="intro__img intro__img--mini" alt="sedona title">
       </section>
       </section>
-      <section class="promo">
+      <section class="promo promo--form">
         <h1 class="promo__title">Оставьте свой отзыв</h1>
         <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
@@ -46,28 +46,73 @@
       <section class="review">
         <form class="review__form" action="get">
           <fieldset class="review__fieldset review__fieldset--impression">
+
             <legend class="review__legend">Ваше общее впечатление:</legend>
-            <input type="radio"><label for="" class="review__label">Скорее положительное</label>
-            <input type="radio"><label for="" class="review__label">Скорее положительное</label>
-            <input type="radio"><label for="" class="review__label">Скорее положительное</label>
+            <ul class="review__list">
+              <li class="review__item">
+                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
+              </li>
+              <li class="review__item">
+                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
+              </li>
+              <li class="review__item">
+                <input type="radio"><label for="" class="review__label review__label--lower">Скорее положительное</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--name">
+
             <legend class="review__legend">Представьтесь:</legend>
-            <label for="" class="review__label"></label>Имя:<input type="text">
-            <label for="" class="review__label"></label>Фамилия*:<input type="text">
-            <label for="" class="review__label"></label>Отчество:<input type="text">
+            <ul class="review__list">
+              <li class="review__item review__text">
+                <label for="" class="review__label review__label">Имя*:</label><input id="reviewName" class="review__input-text"
+                  type="text" value="Петр">
+              </li>
+              <li class="review__item review__text">
+                <label for="" class="review__label review__label">Фамилия*:</label><input class="review__input-text"
+                  type="text" value="Иванов">
+              </li>
+              <li class="review__item review__text">
+                <label for="" class="review__label review__label">Отчество:</label><input class="review__input-text"
+                  type="text" value="Александрович">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--contact">
+
             <legend class="review__legend">Контактная информация:</legend>
-            <label class="review__label">Телефон*:</label><input type="text">
-            <label class="review__label">Телефон*:</label><input type="text">
+            <ul class="review__list">
+              <li class="review__item review__text">
+                <label class="review__label review__label">Контактный телефон*:</label>
+                <input class="review__input-text" type="text" value="Введите телефон">
+              </li>
+              <li class="review__item review__text">
+                <label class="review__label review__label">Электронная почта*:</label>
+                <input class="review__input-text" type="text" value="Введите e-mail">
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--places">
+
             <legend class="review__legend">Посещенные достопримечательности:</legend>
-            <input type="checkbox" checked><label for="" class="review__label">Мост Дьявола</label>
-            <input type="checkbox" checked><label for="" class="review__label">Гора-Колокол</label>
-            <input type="checkbox" checked><label for="" class="review__label">Слайд-парк</label>
-            <input type="checkbox"><label for="" class="review__1label">Красные скалы</label>
+            <ul class="review__list">
+              <li class="review__item">
+                <input type="checkbox" checked>
+                <label for="" class="review__label">Мост Дьявола</label>
+              </li>
+              <li class="review__item">
+                <input type="checkbox" checked>
+                <label for="" class="review__label">Гора-Колокол</label>
+              </li>
+              <li class="review__item">
+                <input type="checkbox" checked>
+                <label for="" class="review__label">Слайд-парк</label>
+              </li>
+              <li class="review__item">
+                <input type="checkbox">
+                <label for="" class="review__1label">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--emotions">
             <legend class="review__legend">Опишите свои эмоции:</legend>
@@ -98,9 +143,12 @@
     <footer class="footer">
       <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg" alt=""> </a>
-        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg" alt=""></a>
-        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg" alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg"
+            alt=""> </a>
+        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg"
+            alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg"
+            alt=""></a>
       </div>
       <a href="#" class="footer__copyright">разработано</a>
     </footer>

@@ -25,6 +25,12 @@
       display: none;
     }
   }
+
+  &--form {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .promo__title {

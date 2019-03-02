@@ -739,6 +739,8 @@ a {
     background-repeat: no-repeat; }
   .promo--photo::after {
     display: none; }
+  .promo--form::after {
+    display: none; }
 
 .promo__title {
   margin: 0;
@@ -896,15 +898,82 @@ a {
   .btn:hover {
     background-color: #669ec0; }
 
+.review__form {
+  display: flex;
+  flex-direction: column; }
+
+.review__fieldset {
+  position: relative;
+  border: none;
+  padding: 25px 20px 25px 20px;
+  display: flex; }
+  .review__fieldset--name {
+    order: 1; }
+  .review__fieldset--impression {
+    order: 3; }
+  .review__fieldset--contact {
+    order: 2; }
+  .review__fieldset--places {
+    order: 4; }
+  .review__fieldset--emotions {
+    order: 5; }
+  .review__fieldset::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #e5e5e5; }
+
 .review__legend {
-  font-size: 21px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold; }
 
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.review__text {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px; }
+  .review__text:last-child {
+    margin-bottom: 0; }
+
+.review__form-footer {
+  order: 6; }
+
+.review__fieldset--contact .review__text {
+  flex-wrap: wrap; }
+
 .review__label {
+  margin-right: 13px;
+  font-size: 14px;
+  line-height: 26px; }
+  .review__label--lower {
+    text-transform: lowercase; }
+
+.review__fieldset--contact .review__label {
+  margin-left: 22px;
+  position: relative;
+  margin-bottom: 12px; }
+
+.review__input-text {
+  width: 100%;
+  padding: 18px 20px 19px 21px;
+  background-color: #f2f2f2;
+  border: none;
   font-size: 18px;
   line-height: 26px;
-  text-transform: none; }
+  font-weight: bold; }
+
+.review__fieldset--contact .review__input-text {
+  width: 280px; }
 
 .review__note {
   font-size: 14px;

@@ -47,97 +47,101 @@
         <form class="review__form" action="get">
           <fieldset class="review__fieldset review__fieldset--name">
 
-            <legend class="review__legend">Представьтесь:</legend>
+            <legend class="review__legend review__legend--name">Представьтесь:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label for="" class="review__label">Имя*:</label><input id="reviewName" class="review__input-text"
-                  type="text" value="Петр">
+                <label for="" class="review__label review__label--name">Имя*:</label><input id="reviewName" class="review__input-text"
+                  type="text" placeholder="Петр">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label">Фамилия*:</label><input class="review__input-text"
-                  type="text" value="Иванов">
+                <label for="" class="review__label review__label--name">Фамилия*:</label><input class="review__input-text"
+                  type="text" placeholder="Иванов">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label">Отчество:</label><input class="review__input-text"
-                  type="text" value="Александрович">
+                <label for="" class="review__label review__label--name">Отчество:</label><input class="review__input-text"
+                  type="text" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--contact">
 
-            <legend class="review__legend">Контактная информация:</legend>
+            <legend class="review__legend review__legend--contact review__legend--border">Контактная информация:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label class="review__label">Контактный телефон*:</label>
-                <input class="review__input-text" type="text" value="Введите телефон">
+                <label class="review__label review__label--contact">Контактный телефон*:</label>
+                <input class="review__input-text review__text--contact" type="text" placeholder="Введите телефон">
               </li>
               <li class="review__item review__text">
-                <label class="review__label">Электронная почта*:</label>
-                <input class="review__input-text" type="text" value="Введите e-mail">
+                <label class="review__label review__label--contact">Электронная почта*:</label>
+                <input class="review__input-text review__text--contact" type="text" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--impression">
 
-            <legend class="review__legend">Ваше общее впечатление:</legend>
+            <legend class="review__legend review__legend--impression">Ваше общее впечатление:</legend>
             <ul class="review__list">
-              <li class="review__item review__box">
-                <input type="radio" name="impression" id="radioBtn1"><label for="radioBtn1" class="review__label">Скорее положительное</label>
+              <li class="review__item review__item--impression">
+                <input type="radio" class='visually-hidden' name="impression" id="radioBtn1" checked>
+                <label for="radioBtn1" class="review__label review__label--btn review__label--radio">Скорее
+                  положительное</label>
               </li>
-              <li class="review__item review__box">
-                <input type="radio" name="impression" id="radioBtn2"><label for="radioBtn2" class="review__label">Скорее отрицательное</label>
+              <li class="review__item review__item--impression">
+                <input type="radio" class='visually-hidden' name="impression" id="radioBtn2">
+                <label for="radioBtn2" class="review__label review__label--btn review__label--radio">Скорее
+                  отрицательное</label>
               </li>
-              <li class="review__item review__box">
-                <input type="radio" name="impression" id="radioBtn3"><label for="radioBtn3" class="review__label">Затрудняюсь ответить</label>
+              <li class="review__item review__item--impression">
+                <input type="radio" class='visually-hidden' name="impression" id="radioBtn3">
+                <label for="radioBtn3" class="review__label review__label--btn review__label--radio">Затрудняюсь
+                  ответить</label>
               </li>
             </ul>
           </fieldset>
-
-
           <fieldset class="review__fieldset review__fieldset--places">
 
-            <legend class="review__legend">Посещенные достопримечательности:</legend>
-            <ul class="review__list">
-              <li class="review__item review__box">
-                <input type="checkbox" id="checkBtn1" checked>
-                <label for="checkBtn1" class="review__label">Мост Дьявола</label>
+            <legend class="review__legend review__legend--places review__legend--border">Посещенные достопримечательности:</legend>
+            <ul class="review__list review__list--places">
+              <li class="review__item review__item--places">
+                <input type="checkbox" class='visually-hidden' id="checkBtn1" checked>
+                <label for="checkBtn1" class="review__label review__label--btn review__label--check">Мост Дьявола</label>
               </li>
-              <li class="review__item review__box">
-                <input type="checkbox" id="checkBtn2" checked>
-                <label for="checkBtn2" class="review__label">Гора-Колокол</label>
+              <li class="review__item review__item--places">
+                <input type="checkbox" class='visually-hidden' id="checkBtn2" checked>
+                <label for="checkBtn2" class="review__label review__label--btn review__label--check">Гора-Колокол</label>
               </li>
-              <li class="review__item review__box">
-                <input type="checkbox" id="checkBtn3" checked>
-                <label for="checkBtn3" class="review__label">Слайд-парк</label>
+              <li class="review__item review__item--places">
+                <input type="checkbox" class='visually-hidden' id="checkBtn3" checked>
+                <label for="checkBtn3" class="review__label review__label--btn review__label--check">Слайд-парк</label>
               </li>
-              <li class="review__item review__box">
-                <input type="checkbox" id="checkBtn4">
-                <label for="checkBtn4" class="review__label">Красные скалы</label>
+              <li class="review__item review__item--places">
+                <input type="checkbox" class='visually-hidden' id="checkBtn4">
+                <label for="checkBtn4" class="review__label review__label--btn review__label--check">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--emotions">
-            <legend class="review__legend">Опишите свои эмоции:</legend>
-            <input type="text" class="review__input">
+            <legend class="review__legend review__legend--emotions review__legend--border">Опишите свои эмоции:</legend>
+            <textarea class="review__amply" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review__form-footer">
             <button class="review__btn btn">Отправить отзыв</button>
-            <span class="review__note">*-обязательные поля</span>
+            <span class="review__note">*—обязательные поля</span>
           </div>
 
         </form>
       </section>
       <div class="failure-popup visually-hidden">
-        <span class="failure-popup__title">Что-то пошло не так!</span>
+        <p class="failure-popup__title">Что-то пошло не так!</p>
         <p class="failure-popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="failure-popup__btn btn">ок</button>
       </div>
       <div class="succes-popup visually-hidden">
-        <span class="succes-popup__title">Ваш отзыв отправлен!
-        </span>
-        <p class="succes-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+        <p class="succes-popup__title">Ваш отзыв отправлен!
+        </p>
+        <p class="succes-popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы
           опубликуем его на сайте.</p>
-        <div class="succes-popup_wrapper">
+        <div class="succes-popup__wrapper">
           <button class="succes-popup__btn btn">закрыть окно</button>
         </div>
       </div>

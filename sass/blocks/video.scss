@@ -7,11 +7,14 @@
 .video__item {
   width: 320px;
 
-  background-image: url('../../img/video-mobile@1x.jpg');
+  background-image: url('/img/video-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   vertical-align: top;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('/img/video-mobile@2x.jpg');
+  }
 }
 
 .video__controls {
@@ -73,7 +76,22 @@
 .video__btn {
   padding: 0;
   border: none;
+  background-color: transparent;
+  outline: none;
 }
+
+.video__btn svg path {
+  fill: #5c6870;
+}
+
+.video__btn:hover svg path, .video__btn:focus svg path {
+  fill: #333333;
+}
+
+.video__btn:active svg path {
+  fill: #b8b8b8;
+}
+
 @media (min-width: $tablet-width) {
   .video {
     position: relative;
@@ -83,6 +101,12 @@
   .video__item {
     width: 648px;
     height: 500px;
+
+    background-image: url('/img/video-tablet@1x.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('/img/video-tablet@2x.jpg');
+    }
   }
 
   .video__controls {
@@ -114,12 +138,29 @@
   }
 }
 
+.video__btn svg path {
+  fill: #ffffff;
+}
+
+.video__btn:hover svg path, .video__btn:focus svg path {
+  fill: #c2c2c2;
+}
+
+.video__btn:active svg path {
+  fill: #949494;
+}
+
 @media (min-width: $desktop-width) {
   .video {
     padding: 0 200px;
   }
   .video__item {
     width: 800px;
+    background-image: url('/img/video-desktop@1x.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('/img/video-desktop@2x.jpg');
+    }
   }
   .video__controls {
     width: 800px;

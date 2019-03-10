@@ -56,6 +56,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+
 }
 
 .review__label {
@@ -82,6 +83,7 @@
   }
 
   &--radio {
+    cursor: pointer;
     &::before {
       content: '';
       position: absolute;
@@ -91,9 +93,15 @@
       background: $grey;
       border-radius: 50%;
     }
+  &:hover, &:active {
+      &::before {
+        background: $grey-hover;
+      }
+    }
   }
 
   &--check {
+    cursor: pointer;
     &::before {
       content: '';
       position: absolute;
@@ -102,6 +110,11 @@
       height: 56px;
       background: $grey;
       border-radius: 10%;
+    }
+  &:hover{
+      &::before {
+        background: $grey-hover;
+      }
     }
   }
 }
@@ -118,6 +131,21 @@ input:checked+.review__label--radio {
   }
 }
 
+input:focus + .review__label--radio {
+  &::before {
+    background: $grey-hover;
+  }
+}
+
+input:active + .review__label--radio {
+  &::before {
+    background: $grey-down;
+  }
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 input:checked+.review__label--check {
   &::after {
     content: '';
@@ -130,21 +158,45 @@ input:checked+.review__label--check {
   }
 }
 
+input:focus + .review__label--check {
+  &::before {
+    background: $grey-hover;
+  }
+}
+
+input:active + .review__label--check {
+  &::before {
+    background: $grey-down;
+  }
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .review__fieldset--contact .review__text {
   flex-wrap: wrap;
 }
 
-.review__input-text {
+.review__input-text-wrapper {
+  position: relative;
   width: 100%;
-  padding: 18px 20px 19px 21px;
-  background-color: $grey;
-  border: none;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: bold;
-
-  &--contact {
-    width: 280px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    width: 18px;
+    height: 18px;
+    background-image: url('/img/icons/icon-phone.svg');
   }
 }
 
@@ -159,6 +211,36 @@ input:checked+.review__label--check {
   font-size: 18px;
   line-height: 26px;
 }
+
+.review__input-text {
+  width: 100%;
+  padding: 12px 16px 12px 17px;
+  background-color: $grey;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  border: 4px solid $grey;
+  outline: none;
+
+  &--contact {
+    width: 280px;
+  }
+
+  &:hover {
+    background-color: $grey-hover;
+    border-color: $grey-hover;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border-color: $grey-hover;
+  }
+
+
+}
+
+
 
 .review__note {
   font-size: 14px;
@@ -313,6 +395,9 @@ textarea::placeholder {
     &--places {
       width: 50%;
     }
+    &--impression {
+      margin-top: 3px;
+    }
   }
 
   .review__form-footer {
@@ -324,7 +409,7 @@ textarea::placeholder {
 
     padding: 0;
 
-    width: 648px;
+    width: 100%;
   }
 
   .review__btn {
@@ -340,6 +425,24 @@ textarea::placeholder {
   .review__form {
     padding: 0 120px;
   }
+  .review__list {
+    &--contact {
+      display: flex;
+      justify-content: space-between;
+    }
+    &--places {
+      padding: 0;
+      justify-content: space-between;
+    }
+  }
+  .review__item {
+    &--contact {
+      margin-bottom: 0;
+    }
+    &--places {
+      width: auto;
+    }
+  }
   .review__legend {
     &--impression {
     padding-left: 80px;
@@ -349,5 +452,8 @@ textarea::placeholder {
         width: 280px;
       }
     }
+  }
+  .review__btn {
+    width: 480px;
   }
 }

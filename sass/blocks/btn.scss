@@ -13,4 +13,13 @@
   &:hover {
     background-color: $main-color-hover;
   }
+
+  &:active {
+    background-color: $main-color-down;
+    color: #94b9d2;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

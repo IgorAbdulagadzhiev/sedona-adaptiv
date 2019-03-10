@@ -35,8 +35,8 @@
     height: 158px;
     padding-top: 52px;
 
-    background-position: center 95%;
-    background-size: 250% auto;
+    background-position: center 100%;
+    background-size: 240% auto;
   }
 }
 
@@ -46,8 +46,8 @@
   height: 214px;
   margin: 0 auto;
   &--mini {
-    width: 230px;
-    height: 38px;
+    width: 250px;
+    height: 40px;
   }
 }
 
@@ -86,6 +86,9 @@
     &--mini {
       height: 290px;
       padding-top: 95px;
+      background-image: url('/img/bg-back-desktop@1x.jpg');
+      background-position: center 100%;
+      background-size: 155%;
     }
   }
 
@@ -100,15 +103,15 @@
 
 @media (min-width: $desktop-width) {
   .intro {
-    height: 518px;
 
     background-image: url("/img/bg-back-desktop@1x.jpg");
-    background-position: 50%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
+    background-size: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/bg-back-desktop@2x.jpg");
-      background-position: 50%;
+      background-position: 50% 100%;
       background-repeat: no-repeat;
       background-size: 1200px auto;
     }

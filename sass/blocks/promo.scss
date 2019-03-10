@@ -21,12 +21,15 @@
   }
 
   &--photo {
+    padding-top: 22px;
+    padding-bottom: 27px;
     &::after {
       display: none;
     }
   }
 
   &--form {
+    padding-bottom: 27px;
     &::after {
       display: none;
     }
@@ -47,7 +50,7 @@
   margin-top: 27px;
 
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   color: #333333;
 }
 
@@ -59,7 +62,7 @@
       content: none;
     }
     &--photo {
-      padding: 100px 170px 70px 170px;
+      padding: 70px 170px 70px 170px;
     }
   }
 

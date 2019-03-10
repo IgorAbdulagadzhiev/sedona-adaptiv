@@ -16,4 +16,12 @@
   &:hover {
     background-color: $main-color-hover;
   }
+
+  &:active {
+    background-color: $main-color-down;
+  }
+}
+
+.socials__link:active img {
+  opacity: 0.4;
 }

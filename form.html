@@ -20,15 +20,15 @@
           <img src="/img/icons/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
-      <nav class="nav">
+      <nav class="nav nav--opened">
         <a href="#" class="nav__toggle"></a>
         <div class="nav__wrapper">
           <ul class="site-list">
-            <li class="site-list__item"><a href="index.html" class="site-list__link site-list__link--first">Главная</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
             <li class="site-list__item site-list__item--before-logo"><a href="photo.html" class="site-list__link">Фото
                 и видео</a></li>
             <li class="site-list__item"><a href="form.html" class="site-list__link">Форма отзыва</a></li>
-            <li class="site-list__item"><a href="#" class="site-list__link site-list__link--last">html academy</a></li>
+            <li class="site-list__item"><a href="#" class="site-list__link">html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -66,14 +66,18 @@
           <fieldset class="review__fieldset review__fieldset--contact">
 
             <legend class="review__legend review__legend--contact review__legend--border">Контактная информация:</legend>
-            <ul class="review__list">
-              <li class="review__item review__text">
+            <ul class="review__list review__list--contact">
+              <li class="review__text review__item review__item--contact">
                 <label class="review__label review__label--contact">Контактный телефон*:</label>
-                <input class="review__input-text review__text--contact" type="text" placeholder="Введите телефон">
+                <span class='review__input-text-wrapper'>
+                  <input class="review__input-text review__text--contact" type="text" placeholder="Введите телефон">
+                </span>
               </li>
-              <li class="review__item review__text">
+              <li class="review__text review__item review__item--contact">
                 <label class="review__label review__label--contact">Электронная почта*:</label>
-                <input class="review__input-text review__text--contact" type="text" placeholder="Введите e-mail">
+                <span class='review__input-text-wrapper'>
+                  <input class="review__input-text review__text--contact" type="text" placeholder="Введите e-mail">
+                </span>
               </li>
             </ul>
           </fieldset>
@@ -100,7 +104,8 @@
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--places">
 
-            <legend class="review__legend review__legend--places review__legend--border">Посещенные достопримечательности:</legend>
+            <legend class="review__legend review__legend--places review__legend--border">Посещенные <br>
+              достопримечательности:</legend>
             <ul class="review__list review__list--places">
               <li class="review__item review__item--places">
                 <input type="checkbox" class='visually-hidden' id="checkBtn1" checked>
@@ -122,7 +127,7 @@
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--emotions">
             <legend class="review__legend review__legend--emotions review__legend--border">Опишите свои эмоции:</legend>
-            <textarea class="review__amply" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review__input-text review__amply" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review__form-footer">
             <button class="review__btn btn">Отправить отзыв</button>

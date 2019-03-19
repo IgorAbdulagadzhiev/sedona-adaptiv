@@ -11,13 +11,16 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/icons/sprite.svg"> </include>
+  </div>
   <div class="page-wrapper">
     <header class="header">
       <div class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/icons/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="/img/icons/logo-sedona-tablet.svg">
-          <img src="/img/icons/logo-sedona-mobile.svg" alt="logo">
+          <source media="(min-width: 1200px)" srcset="img/icons/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icons/logo-sedona-tablet.svg">
+          <img src="img/icons/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
       <nav class="nav nav--opened">
@@ -40,7 +43,7 @@
       <section class="promo promo--photo">
         <h1 class="promo__title">Фото и видео</h1>
         <p class="promo__text">Не можете решиться на путешествие из-за курса?
-            Фотографии помогут вам забыть о политике и экономике.</p>
+          Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="gallery">
         <div class="gallery__photo gallery__photo--first">
@@ -78,9 +81,9 @@
         <div class="gallery__photo">
           <div class="gallery__photo-wrapper">
             <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
-                <img src="img/photo-3-mobile@1x.jpg" alt="">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+              <img src="img/photo-3-mobile@1x.jpg" alt="">
             </picture>
           </div>
           <div class="gallery__wrapper">
@@ -94,9 +97,9 @@
         <div class="gallery__photo">
           <div class="gallery__photo-wrapper">
             <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg">
-                <img src="img/photo-4-mobile@1x.jpg" alt="">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg">
+              <img src="img/photo-4-mobile@1x.jpg" alt="">
             </picture>
           </div>
           <div class="gallery__wrapper">
@@ -119,7 +122,9 @@
         </video>
         <div class="video__controls">
           <button class="video__replay video__btn">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20"><path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path></svg>
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+              <path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"></path>
+            </svg>
           </button>
           <div class="video__seekWrapper">
             <div class="video__seek">
@@ -129,10 +134,16 @@
             </div>
           </div>
           <button class="video__subtitle video__btn">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20"><path fill="#454545" d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 0 1 1.679-1.008 5.86 5.86 0 0 1 1.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 0 0-.902-.265A8.244 8.244 0 0 0 12.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 0 1 1.68-1.008 5.858 5.858 0 0 1 1.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 0 1 1.133.313l-.446 1.918a3.314 3.314 0 0 0-.901-.265A8.569 8.569 0 0 0 21.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"></path></svg>
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 32 20">
+              <path fill="#454545" d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 0 1 1.679-1.008 5.86 5.86 0 0 1 1.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 0 0-.902-.265A8.244 8.244 0 0 0 12.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 0 1 1.68-1.008 5.858 5.858 0 0 1 1.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 0 1 1.133.313l-.446 1.918a3.314 3.314 0 0 0-.901-.265A8.569 8.569 0 0 0 21.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"></path>
+            </svg>
           </button>
           <button class="video__fullscreenbtn video__btn">
-            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><g fill="#454545"><path d="M0 0v6h3V3h3V0H3zM3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zM17 17h-3v3h6v-6h-3z"></path></g></svg>
+            <svg version="1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <g fill="#454545">
+                <path d="M0 0v6h3V3h3V0H3zM3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zM17 17h-3v3h6v-6h-3z"></path>
+              </g>
+            </svg>
           </button>
         </div>
       </section>
@@ -140,9 +151,12 @@
     <footer class="footer">
       <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg" alt=""> </a>
-        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg" alt=""></a>
-        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg" alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg"
+            alt=""> </a>
+        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg"
+            alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg"
+            alt=""></a>
       </div>
       <a href="#" class="footer__copyright">разработано</a>
     </footer>

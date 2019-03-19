@@ -11,13 +11,16 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/icons/sprite.svg"> </include>
+  </div>
   <div class="page-wrapper">
     <header class="header">
       <div class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/icons/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="/img/icons/logo-sedona-tablet.svg">
-          <img src="/img/icons/logo-sedona-mobile.svg" alt="logo">
+          <source media="(min-width: 1200px)" srcset="img/icons/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/icons/logo-sedona-tablet.svg">
+          <img src="img/icons/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
       <nav class="nav nav--opened">
@@ -37,7 +40,7 @@
       <section class="intro intro--mini">
         <img src="/img/icons/text-sedona.svg" class="intro__img intro__img--mini" alt="sedona title">
       </section>
-      
+
       <section class="promo promo--form">
         <h1 class="promo__title">Оставьте свой отзыв</h1>
         <p class="promo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
@@ -50,13 +53,16 @@
             <legend class="review__legend review__legend--name">Представьтесь:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Имя*:</label><input id="reviewName" class="review__input-text" type="text" placeholder="Петр">
+                <label for="" class="review__label review__label--name">Имя*:</label><input id="reviewName" class="review__input-text"
+                  type="text" placeholder="Петр">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Фамилия*:</label><input class="review__input-text" type="text" placeholder="Иванов">
+                <label for="" class="review__label review__label--name">Фамилия*:</label><input class="review__input-text"
+                  type="text" placeholder="Иванов">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Отчество:</label><input class="review__input-text" type="text" placeholder="Александрович">
+                <label for="" class="review__label review__label--name">Отчество:</label><input class="review__input-text"
+                  type="text" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -151,9 +157,12 @@
     <footer class="footer">
       <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg" alt=""> </a>
-        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg" alt=""></a>
-        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg" alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg"
+            alt=""> </a>
+        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg"
+            alt=""></a>
+        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg"
+            alt=""></a>
       </div>
       <a href="#" class="footer__copyright">разработано</a>
     </footer>

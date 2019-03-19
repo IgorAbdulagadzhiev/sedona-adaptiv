@@ -10,7 +10,7 @@
   border: none;
   background-color: $main-color;
 
-  transition: background-color linear .1s, color linear .1s;
+  transition: background-color linear 0.1s, color linear 0.1s;
 
   &:hover {
     background-color: $main-color-hover;

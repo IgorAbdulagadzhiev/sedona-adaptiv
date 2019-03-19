@@ -1,3 +1,4 @@
 sedona-all/
 node_modules/
 .editorconfig
+build/

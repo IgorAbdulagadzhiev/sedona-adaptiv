@@ -9,7 +9,10 @@
   "devDependencies": {
     "autoprefixer": "^9.3.1",
     "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
     "gulp-csso": "^3.0.1",
+    "gulp-cwebp": "^3.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
@@ -21,7 +24,8 @@
     "run-sequence": "^2.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "author": "",
   "license": "ISC"

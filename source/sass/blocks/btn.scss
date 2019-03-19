@@ -1,0 +1,27 @@
+.btn {
+  padding: 0;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+  background-color: $main-color;
+
+  transition: background-color linear .1s, color linear .1s;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
+
+  &:active {
+    background-color: $main-color-down;
+    color: #94b9d2;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

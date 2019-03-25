@@ -12,7 +12,7 @@
   margin: 0;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -56,7 +56,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
 }
 
 .review__label {
@@ -64,7 +63,7 @@
 
   &--name {
     margin-right: 14px;
-    color: #000;
+    color: #000000;
   }
 
   &--contact {
@@ -85,8 +84,9 @@
   &--radio {
 
     cursor: pointer;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 56px;
@@ -94,7 +94,9 @@
       background: $grey;
       border-radius: 50%;
     }
-  &:hover, &:active {
+
+    &:hover,
+    &:active {
       &::before {
         background: $grey-hover;
       }
@@ -103,8 +105,9 @@
 
   &--check {
     cursor: pointer;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 56px;
@@ -112,7 +115,8 @@
       background: $grey;
       border-radius: 10%;
     }
-  &:hover{
+
+    &:hover {
       &::before {
         background: $grey-hover;
       }
@@ -120,9 +124,9 @@
   }
 }
 
-input:checked+.review__label--radio {
+input:checked + .review__label--radio {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 17px;
     width: 22px;
@@ -142,19 +146,20 @@ input:active + .review__label--radio {
   &::before {
     background: $grey-down;
   }
+
   &::after {
     opacity: 0.3;
   }
 }
 
-input:checked+.review__label--check {
+input:checked + .review__label--check {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 17px;
     width: 24px;
     height: 16px;
-    background-image: url('/img/icons/icon-tick.svg');
+    background-image: url("/img/icons/icon-tick.svg");
     background-repeat: no-repeat;
   }
 }
@@ -169,6 +174,7 @@ input:active + .review__label--check {
   &::before {
     background: $grey-down;
   }
+
   &::after {
     opacity: 0.3;
   }
@@ -181,8 +187,9 @@ input:active + .review__label--check {
 .review__input-text-wrapper {
   position: relative;
   width: 100%;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -190,14 +197,16 @@ input:active + .review__label--check {
     height: 58px;
     background-color: #e6e6e6;
   }
+
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     right: 19px;
     width: 18px;
     height: 18px;
-    background-image: url('/img/icons/icon-phone.svg');
+    background-image: url("/img/icons/icon-phone.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -217,7 +226,6 @@ input:active + .review__label--check {
   width: 100%;
   padding: 12px 16px 12px 17px;
   background-color: $grey;
-  border: none;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -236,15 +244,9 @@ input:active + .review__label--check {
   }
 
   &:focus {
-    background-color: #fff;
+    background-color: #ffffff;
     border-color: $grey-hover;
   }
-}
-
-.review__note {
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
 }
 
 .review__form-footer {
@@ -262,7 +264,7 @@ input:active + .review__label--check {
 
 input::placeholder,
 textarea::placeholder {
-  color: #000;
+  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -287,7 +289,7 @@ textarea::placeholder {
       order: 1;
 
       &::before {
-        content: ' ';
+        content: " ";
         display: block;
         position: absolute;
         right: 0;
@@ -296,7 +298,6 @@ textarea::placeholder {
         width: 1px;
         height: 100%;
         background-color: #dbdbdb;
-
       }
     }
 
@@ -356,7 +357,7 @@ textarea::placeholder {
     &--border {
       &::before,
       &::after {
-        content: ' ';
+        content: " ";
         display: block;
         position: absolute;
         width: 124px;
@@ -374,7 +375,6 @@ textarea::placeholder {
         top: 50%;
       }
     }
-
   }
 
   .review__list {
@@ -392,6 +392,7 @@ textarea::placeholder {
     &--places {
       width: 50%;
     }
+
     &--impression {
       margin-top: 3px;
     }
@@ -422,34 +423,42 @@ textarea::placeholder {
   .review__form {
     padding: 0 120px;
   }
+
   .review__list {
     &--contact {
       display: flex;
       justify-content: space-between;
     }
+
     &--places {
       padding: 0;
       justify-content: space-between;
     }
   }
+
   .review__item {
     &--contact {
       margin-bottom: 0;
     }
+
     &--places {
       width: auto;
     }
   }
+
   .review__legend {
     &--impression {
-    padding-left: 80px;
+      padding-left: 80px;
     }
+
     &--border {
-      &::before,&::after {
+      &::before,
+      &::after {
         width: 280px;
       }
     }
   }
+
   .review__btn {
     width: 480px;
   }

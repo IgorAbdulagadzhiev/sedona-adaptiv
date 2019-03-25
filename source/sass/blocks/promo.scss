@@ -23,6 +23,7 @@
   &--photo {
     padding-top: 22px;
     padding-bottom: 27px;
+
     &::after {
       display: none;
     }
@@ -30,6 +31,7 @@
 
   &--form {
     padding-bottom: 27px;
+
     &::after {
       display: none;
     }
@@ -61,6 +63,7 @@
     &::after {
       content: none;
     }
+
     &--photo {
       padding: 70px 170px 70px 170px;
     }

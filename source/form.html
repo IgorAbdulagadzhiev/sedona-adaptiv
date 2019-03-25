@@ -18,9 +18,9 @@
     <header class="header">
       <div class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/icons/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/icons/logo-sedona-tablet.svg">
-          <img src="img/icons/logo-sedona-mobile.svg" alt="logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
       <nav class="nav nav--opened">
@@ -38,7 +38,7 @@
     </header>
     <main>
       <section class="intro intro--mini">
-        <img src="/img/icons/text-sedona.svg" class="intro__img intro__img--mini" alt="sedona title">
+        <img src="img/text-sedona.svg" class="intro__img intro__img--mini" alt="sedona title">
       </section>
 
       <section class="promo promo--form">
@@ -53,22 +53,23 @@
             <legend class="review__legend review__legend--name">Представьтесь:</legend>
             <ul class="review__list">
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Имя*:</label><input id="reviewName" class="review__input-text"
-                  type="text" placeholder="Петр">
+                <label for="" class="review__label review__label--name">Имя*:</label><input id="reviewName"
+                  class="review__input-text" type="text" placeholder="Петр">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Фамилия*:</label><input class="review__input-text"
-                  type="text" placeholder="Иванов">
+                <label for="" class="review__label review__label--name">Фамилия*:</label><input
+                  class="review__input-text" type="text" placeholder="Иванов">
               </li>
               <li class="review__item review__text">
-                <label for="" class="review__label review__label--name">Отчество:</label><input class="review__input-text"
-                  type="text" placeholder="Александрович">
+                <label for="" class="review__label review__label--name">Отчество:</label><input
+                  class="review__input-text" type="text" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--contact">
 
-            <legend class="review__legend review__legend--contact review__legend--border">Контактная информация:</legend>
+            <legend class="review__legend review__legend--contact review__legend--border">Контактная информация:
+            </legend>
             <ul class="review__list review__list--contact">
               <li class="review__text review__item review__item--contact">
                 <label class="review__label review__label--contact">Контактный телефон*:</label>
@@ -112,11 +113,13 @@
             <ul class="review__list review__list--places">
               <li class="review__item review__item--places">
                 <input type="checkbox" class="visually-hidden" id="checkBtn1" checked="">
-                <label for="checkBtn1" class="review__label review__label--btn review__label--check">Мост Дьявола</label>
+                <label for="checkBtn1" class="review__label review__label--btn review__label--check">Мост
+                  Дьявола</label>
               </li>
               <li class="review__item review__item--places">
                 <input type="checkbox" class="visually-hidden" id="checkBtn2" checked="">
-                <label for="checkBtn2" class="review__label review__label--btn review__label--check">Гора-Колокол</label>
+                <label for="checkBtn2"
+                  class="review__label review__label--btn review__label--check">Гора-Колокол</label>
               </li>
               <li class="review__item review__item--places">
                 <input type="checkbox" class="visually-hidden" id="checkBtn3" checked="">
@@ -124,13 +127,15 @@
               </li>
               <li class="review__item review__item--places">
                 <input type="checkbox" class="visually-hidden" id="checkBtn4">
-                <label for="checkBtn4" class="review__label review__label--btn review__label--check">Красные скалы</label>
+                <label for="checkBtn4" class="review__label review__label--btn review__label--check">Красные
+                  скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="review__fieldset review__fieldset--emotions">
             <legend class="review__legend review__legend--emotions review__legend--border">Опишите свои эмоции:</legend>
-            <textarea class="review__input-text review__amply" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review__input-text review__amply"
+              placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="review__form-footer">
             <button class="review__btn btn">Отправить отзыв</button>
@@ -157,12 +162,24 @@
     <footer class="footer">
       <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg"
-            alt=""> </a>
-        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg"
-            alt=""></a>
-        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg"
-            alt=""></a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">твиттер</span> 
+        <svg width="30" height="20">
+          <use xlink:href="#icon-twitter"> </use> 
+        </svg> 
+        </a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">фейсбук</span>
+        <svg width="12" height="22" >
+          <use xlink:href="#icon-fb"> </use> 
+        </svg> 
+            </a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">ютуб</span>
+        <svg width="25" height="20" >
+          <use xlink:href="#icon-youtube"> </use> 
+        </svg> 
+            </a>
       </div>
       <a href="#" class="footer__copyright">разработано</a>
     </footer>

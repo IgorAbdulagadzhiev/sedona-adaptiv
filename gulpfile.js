@@ -66,11 +66,11 @@ gulp.task("images", function() {
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest('source/img'));
 });
 
 gulp.task('sprite', function() {
-  return gulp.src('source/img/icons/icon-*.svg')
+  return gulp.src('build/img/icons/icon-*.svg')
   .pipe(svgstore({
     inlineSvg: true
   }))

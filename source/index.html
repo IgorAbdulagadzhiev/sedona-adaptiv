@@ -18,9 +18,9 @@
     <header class="header">
       <div class="header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/icons/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/icons/logo-sedona-tablet.svg">
-          <img src="img/icons/logo-sedona-mobile.svg" alt="logo">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="logo">
         </picture>
       </div>
       <nav class="nav nav--opened">
@@ -109,12 +109,24 @@
     <footer class="footer">
       <a class="footer__hashtag" href="#">#visitsedona</a>
       <div class="socials footer__socials">
-        <a class="socials__link" href="#"><span class="visually-hidden">твиттер</span> <img src="/img/icons/icon-twitter.svg"
-            alt=""> </a>
-        <a class="socials__link" href="#"><span class="visually-hidden">фейсбук</span> <img src="/img/icons/icon-fb.svg"
-            alt=""></a>
-        <a class="socials__link" href="#"><span class="visually-hidden">ютуб</span> <img src="/img/icons/icon-youtube.svg"
-            alt=""></a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">твиттер</span> 
+        <svg width="30" height="20">
+          <use xlink:href="#icon-twitter"> </use> 
+        </svg> 
+        </a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">фейсбук</span>
+        <svg width="12" height="22" >
+          <use xlink:href="#icon-fb"> </use> 
+        </svg> 
+            </a>
+        <a class="socials__link" href="#">
+        <span class="visually-hidden">ютуб</span>
+        <svg width="25" height="20" >
+          <use xlink:href="#icon-youtube"> </use> 
+        </svg> 
+            </a>
       </div>
       <a href="#" class="footer__copyright">разработано</a>
     </footer>

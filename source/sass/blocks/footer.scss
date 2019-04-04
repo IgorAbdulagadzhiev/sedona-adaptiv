@@ -6,7 +6,6 @@
 }
 
 .footer__hashtag {
-  display: inline-block;
 
   margin-top: 15px;
 
@@ -14,6 +13,16 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+
+  transition: color 0.1s linear;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 }
 
 .footer__socials {
@@ -22,7 +31,6 @@
 }
 
 .footer__copyright {
-  display: inline-block;
 
   margin-top: 32px;
   padding: 10px 45px 10px 0;

@@ -51,6 +51,8 @@
   position: relative;
   background-color: rgba($color: #ffffff, $alpha: 0.2);
   height: 3px;
+
+  cursor: pointer;
 }
 
 .video__bar {
@@ -83,6 +85,8 @@
 
 .video__btn svg path {
   fill: #5c6870;
+
+  transition: fill 0.1s linear;
 }
 
 .video__btn:hover svg path,

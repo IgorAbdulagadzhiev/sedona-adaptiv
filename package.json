@@ -20,7 +20,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
+    "gulp-uglify-es": "^1.0.4",
     "posthtml-include": "^1.2.0",
+    "readable-stream": "^3.3.0",
     "run-sequence": "^2.2.1"
   },
   "scripts": {

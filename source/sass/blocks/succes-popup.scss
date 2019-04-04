@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 320px;
   width: 320px;
@@ -11,6 +11,10 @@
   background-color: #ffffff;
   z-index: 10;
   box-shadow: 0 7px 15px 5px rgba(0, 0, 0, 0.15);
+
+  &--active {
+    display: flex;
+  }
 }
 
 .succes-popup__title {

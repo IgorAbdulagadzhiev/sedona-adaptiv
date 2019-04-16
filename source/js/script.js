@@ -18,4 +18,4 @@ formBtn.addEventListener('click', function(event) {
 failureBtn.addEventListener('click', function(event) {
   event.preventDefault();
   failure.classList.remove('failure-popup--active');
-})
+});

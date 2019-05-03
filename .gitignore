@@ -1,4 +1,5 @@
-sedona-all/
 node_modules/
 build/
 .editorconfig
+sedona-all/
+

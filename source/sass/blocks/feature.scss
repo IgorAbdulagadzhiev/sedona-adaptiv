@@ -7,17 +7,17 @@
   background-size: 39px 37px;
 
   &--house {
-    background-image: url("/img/icons/icon-home.svg");
+    background-image: url("../img/icons/icon-home.svg");
     background-position: 11px 20px;
   }
 
   &--food {
-    background-image: url("/img/icons/icon-burger.svg");
+    background-image: url("../img/icons/icon-burger.svg");
     background-position: 9px 23px;
   }
 
   &--souvenirs {
-    background-image: url("/img/icons/icon-gift.svg");
+    background-image: url("../img/icons/icon-gift.svg");
     background-position: 12px 18px;
   }
 }

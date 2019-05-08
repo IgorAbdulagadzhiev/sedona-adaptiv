@@ -159,7 +159,7 @@ input:checked + .review__label--check {
     left: 17px;
     width: 24px;
     height: 16px;
-    background-image: url("/img/icons/icon-tick.svg");
+    background-image: url("../img/icons/icon-tick.svg");
     background-repeat: no-repeat;
   }
 }
@@ -205,7 +205,7 @@ input:active + .review__label--check {
     right: 19px;
     width: 18px;
     height: 18px;
-    background-image: url("/img/icons/icon-phone.svg");
+    background-image: url("../img/icons/icon-phone.svg");
     background-repeat: no-repeat;
   }
 }

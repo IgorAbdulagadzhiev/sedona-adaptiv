@@ -20,14 +20,14 @@
   width: 23px;
   height: 22px;
 
-  background: url("/img/icons/icon-menu.svg");
+  background: url("../img/icons/icon-menu.svg");
 
   border: none;
   cursor: pointer;
 }
 
 .nav--opened .nav__toggle {
-  background: url("/img/icons/icon-cross.svg");
+  background: url("../img/icons/icon-cross.svg");
 }
 
 @media (min-width: $tablet-width) {
